@@ -18,3 +18,4 @@ func main() {
     fmt.Fprintln(os.Stdout,"Starting GoApp Server......")
       http.HandleFunc("/",handler)
       log.Fatal(http.ListenAndServe(":8080",nil))
+}
